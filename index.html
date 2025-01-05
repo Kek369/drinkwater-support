@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>喝水助手 - 支持页面</title>
+    <title>喝水助手</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -13,38 +13,116 @@
             max-width: 800px;
             margin: 0 auto;
             color: #333;
+            background-color: #f5f5f7;
         }
-        h1 { color: #007AFF; }
-        .container { padding: 20px; }
-        .support-item { margin-bottom: 30px; }
-        a { color: #007AFF; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .footer { margin-top: 50px; text-align: center; color: #666; }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        h1 {
+            color: #007AFF;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f7ff;
+            border-radius: 8px;
+        }
+        .legal-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .legal-links a {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .legal-links a:hover {
+            background: #f0f0f0;
+            transform: translateY(-1px);
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>喝水助手</h1>
-        
-        <div class="support-item">
+
+        <div class="section">
             <h2>应用介绍</h2>
-            <p>喝水助手是一款帮助您养成健康饮水习惯的应用。</p>
-            <ul>
-                <li>便捷记录每次饮水量</li>
-                <li>自定义每日饮水目标</li>
-                <li>数据统计和分析</li>
-                <li>智能饮水提醒</li>
+            <p>喝水助手是一款简单易用的饮水追踪应用，帮助您养成健康的饮水习惯。</p>
+            
+            <h3>主要功能</h3>
+            <ul class="feature-list">
+                <li>📱 便捷记录：一键记录每次饮水量</li>
+                <li>🎯 个性化目标：自定义每日饮水目标</li>
+                <li>📊 数据统计：直观展示饮水趋势和完成情况</li>
+                <li>⏰ 智能提醒：根据您的作息时间智能提醒饮水</li>
             </ul>
         </div>
 
-        <div class="support-item">
+        <div class="section">
+            <h2>版本信息</h2>
+            <p>当前版本：1.0</p>
+            <p>更新日期：2024年1月</p>
+            <p>支持设备：iPhone/iPad</p>
+            <p>系统要求：iOS 14.0 或更高版本</p>
+        </div>
+
+        <div class="contact">
             <h2>联系与支持</h2>
             <p>邮箱：support@example.com</p>
-            <p><a href="privacy.html">隐私政策</a></p>
+            
+            <div class="legal-links">
+                <a href="privacy.html">📋 隐私政策</a>
+                <a href="terms.html">📜 用户协议</a>
+                <a href="data-collection.html">🔒 数据收集说明</a>
+            </div>
         </div>
 
         <div class="footer">
-            <p>© 2024 喝水助手. All rights reserved.</p>
+            <p>© 2024 喝水助手</p>
+            <p>All rights reserved.</p>
         </div>
     </div>
 </body>
